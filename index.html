@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Aja</title>
+    <style type="text/css">
+      /* CSS Style untuk halaman */
+      body {
+        background-color: whitesmoke; /* Warna latar belakang body */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Verdana, sans-serif; /* Font family untuk teks */
+      }
+      .container {
+        max-width: 640px;
+        margin: auto;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: whitesmoke;
+        padding: 10px;
+      }
+      .grid-container > div {
+        flex: 1;
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+      }
+      .grid-container > div img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+      .footer-table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        font-size: 10pt;
+      }
+      .footer-table td {
+        padding: 10px;
+        text-align: center; /* Tengah kanan footer */
+      }
+      .footer-table img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto; /* Memberi jarak antara ikon dan teks */
+        transition: box-shadow 0.3s ease; /* Transisi untuk efek bayangan */
+      }
+      .footer-table .contact-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Tengah kanan tautan */
+      }
+      .footer-table .contact-links a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 5px; /* Jarak antara setiap tautan */
+        transition: box-shadow 0.3s ease; /* Transisi untuk efek bayangan */
+      }
+      .footer-table .contact-links a:hover {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); /* Efek bayangan pada hover */
+      }
+      .footer-table .contact-links img {
+        margin-right: 5px; /* Jarak antara ikon dan teks */
+        max-width: 30px;
+        height: auto;
+        opacity: 0.7; /* Transparansi ikon */
+      }
+      .appleLinks {
+        font-weight: 300;
+        text-align: center; /* Tengah kanan teks */
+      }
+      .footer-table .app-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Atur tautan "Download Aplikasi OCBC" dan "Play Store & App Store" secara vertikal ke kiri */
+        margin-bottom: 10px; /* Jarak antara "Download Aplikasi OCBC" dan "Punya Pertanyaan" */
+      }
+      .footer-table .app-links a {
+        margin-right: 10px; /* Jarak antara tautan "Download Aplikasi OCBC" dan "Play Store & App Store" */
+        transition: box-shadow 0.3s ease; /* Transisi untuk efek bayangan */
+      }
+      .footer-table .app-links a:hover {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); /* Efek bayangan pada hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" valign="top" class="responsive">
+            <!-- Konten header -->
+            <table
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="responsive bg-black"
+              style="
+                border-collapse: collapse;
+                mso-table-lspace: 0;
+                mso-table-rspace: 0;
+                background-color: whitesmoke;
+                color: whitesmoke;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td class="fluid-img hero-img-top">
+                    <img
+                      src="asset/4.jpeg"
+                      alt="OCBC"
+                      width="100%"
+                      border="0"
+                      class="image_fix"
+                      style="
+                        outline: none;
+                        text-decoration: none;
+                        -ms-interpolation-mode: bicubic;
+                        display: block;
+                      "
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" class="responsive">
+            <!-- Konten utama -->
+            <table
+              valign="top"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="responsive bg-white"
+              style="
+                border-collapse: collapse;
+                mso-table-lspace: 0;
+                mso-table-rspace: 0;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td class="">
+                    <div class="grid-container">
+                      <div class="item1">
+                        <img src="asset/1.jpeg" width="100%" height="auto" />
+                      </div>
+                      <div class="item2">
+                        <img src="asset/2.jpeg" width="100%" height="auto" />
+                      </div>
+                      <div class="item3">
+                        <img src="asset/3.jpeg" width="100%" height="auto" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Footer -->
+      <table
+        width="100%"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        class="footer-table"
+      >
+        <tr>
+          <td colspan="2" class="app-links">
+            <span style="font-weight: 900">Download Aplikasi OCBC</span><br />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ocbcnisp.onemobileapp&hl=id&pli=1"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/256px-Google_Play_Store_badge_EN.svg.png"
+                alt="Google Play Store"
+                style="border-radius: auto; width: auto; height: auto"
+              /> </a
+            ><br />
+            <a
+              href="https://apps.apple.com/id/app/ocbc-mobile-indonesia/id1194942386"
+              target="_blank"
+            >
+              <img
+                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
+                alt="App Store"
+                style="border-radius: auto; width: auto; height: 83px"
+              />
+            </a>
+          </td>
+          <td colspan="2">
+            <span style="font-weight: 900">Punya Pertanyaan?</span><br />
+            <span class="contact-links">
+              <a href="tel:1500999" target="_blank">
+                <img
+                  src="https://image.info.ocbc.id/lib/fe3611717164047c7c1673/m/6/44cb969b-b3c2-4994-9ea1-3b9ee06106fe.png"
+                  alt="Telephone"
+                />
+                15xxxxx </a
+              ><br />
+              <a href="mailto:tanya@ocbc.id" target="_blank">
+                <img
+                  src="https://image.info.ocbc.id/lib/fe3611717164047c7c1673/m/6/bf2f760d-9430-4f6d-aa52-716a61b3e5f3.png"
+                  alt="Email"
+                />
+                tanya@ocbc.id </a
+              ><br />
+              <a href="#" target="_blank">
+                <img
+                  src="https://image.info.ocbc.id/lib/fe3611717164047c7c1673/m/6/b66782aa-5d29-4aa2-9879-58a5dcc9f0b0.png"
+                  alt="Whatsapp"
+                />
+                0812xxxxxx
+              </a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" class="appleLinks">
+            <div style="text-align: center">
+              PT Bank OCBC NISP Tbk<br />
+              OCBC Tower, Jl. Prof. Dr. Satrio Kav 25<br />
+              Jakarta, DKI Jakarta, 12940 Indonesia.<br />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" class="appleLinks">
+            <div style="text-align: center">
+              PT Bank OCBC NISP Tbk berizin dan diawasi oleh<br />
+              Otoritas Jasa Keuangan &amp; Bank Indonesia, serta merupakan
+              peserta penjaminan LPS.<br />
+              <a href="#" target="_blank">Unsubscribe</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
